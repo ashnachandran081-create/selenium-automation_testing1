@@ -26,5 +26,12 @@ public class LoginPage {
 	public void submitLogin() {
 		driver.findElement(login_button).click();
 	}
+	public void clicklogin(String emailvalue , String passwordValue) {
+		driver.findElement(email_field).clear();
+		driver.findElement(email_field).sendKeys(emailvalue);
+		driver.findElement(password_fieldBy).clear();
+		driver.findElement(password_fieldBy).sendKeys(passwordValue);
+		driver.findElement(login_button).click();
+	}
 
 }
